@@ -2,15 +2,11 @@
 
 Open source platform for online edication.
 ==================
-Based on `JHipster`_ Java framework.
+Based on <a href="https://jhipster.github.io/">JHipster</a> Java framework.
 
 Prototype:
 --------
 
--  `edX platform`_
--  `Coursera.org courses`_
--  `MongoDB University`_
-
-.. _edX platform`: https://courses.edx.org/courses/edX/DemoX.1/2014/
-.. _coursera.org course: https://www.coursera.org/course/reactive
-.. _MongoDB University: https://university.mongodb.com/courses/M101J/about
+-  <a href="https://courses.edx.org/courses/edX/DemoX.1/2014/">edX platform</a>
+-  <a href="https://www.coursera.org/course/reactive">Coursera.org courses</a>
+-  <a href="https://university.mongodb.com/courses/M101J/about">MongoDB University</a>
