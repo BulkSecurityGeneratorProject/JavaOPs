@@ -1,4 +1,4 @@
-#jweb-platform
+#eLerning JWebPlatform
 
 Open source platform for online edication.
 ==================
