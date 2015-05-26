@@ -19,3 +19,17 @@ Resources:
 
 <a href="spec.md">Техническое задание</a>
 -----------
+
+Install
+========
+For Windows:
+-  Install cmder: http://gooseberrycreative.com/cmder/
+-  Change security politics (see cmder hints)
+-  Install if error PowerShell 4.0: 
+   http://www.lazywinadmin.com/2013/10/powershell-40-is-now-available.html
+   http://www.edugeek.net/forums/downloads/126017-windows-management-framework-v4-0-includes-powershell-v4-0-a.html
+    
+Run all "npm install" in cmder    
+https://jhipster.github.io/installation.html
+
+mvn dependency:sources

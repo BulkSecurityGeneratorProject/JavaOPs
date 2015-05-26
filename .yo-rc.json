@@ -1,0 +1,20 @@
+{
+  "generator-jhipster": {
+    "baseName": "jWebPlatform",
+    "packageName": "ru.javawebinar.jweb",
+    "packageFolder": "ru/javawebinar/jweb",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "no",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "rememberMeKey": "aaa8cbd81d2b6001afb8b1a9874dd3c5c381a6fa"
+  }
+}
