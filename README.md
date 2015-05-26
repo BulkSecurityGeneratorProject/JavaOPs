@@ -16,20 +16,21 @@ Resources:
 -------
 -  <a href="http://habrahabr.ru/post/246349/">Yeoman для новичков</a>
 -  <a href="http://codemotion.ru/gulp-avtomatizaciya-processa-razrabotki-1427.html">Gulp — автоматизация процесса разработки</a>
+-  <a href="http://habrahabr.ru/post/233827/>Основы работы с модулями в Node.js </a>
 
 <a href="spec.md">Техническое задание</a>
 -----------
 
 Install
 ========
-For Windows:
+For Windows 7:
 -  Install cmder: http://gooseberrycreative.com/cmder/
 -  Change security politics (see cmder hints)
--  Install if error PowerShell 4.0: 
-   http://www.lazywinadmin.com/2013/10/powershell-40-is-now-available.html
-   http://www.edugeek.net/forums/downloads/126017-windows-management-framework-v4-0-includes-powershell-v4-0-a.html
-    
-Run all "npm install" in cmder    
+-  Install PowerShell 4.0: 
+     http://www.lazywinadmin.com/2013/10/powershell-40-is-now-available.html
+     http://www.edugeek.net/forums/downloads/126017-windows-management-framework-v4-0-includes-powershell-v4-0-a.html
+-  Run all "npm install" in cmder
+       
 https://jhipster.github.io/installation.html
 
 mvn dependency:sources
