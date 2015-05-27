@@ -3,7 +3,7 @@
 
 Управление пользоваетлями
 --------
--   Authorize, register, login, logout пользователей, права на основе ролей: ADMIN, COACH, LEARNER
+-   Authorize, register, login, logout пользователей, права на основе ролей: ADMIN, COUCH, LEARNER
 -   Управление личными данными 
     Прототип <a href="https://www.coursera.org/account/profile">Сoursera profile</a>
     -  Photo (храним на диске в сконфигурированном каталоге)
@@ -28,7 +28,6 @@
 -  Отображение курсов пользователя при входе в платформу 
    https://www.coursera.org/
    https://university.mongodb.com/dashboard 
-
     
 Интеграция с почтовым сервером:
 -------
@@ -48,3 +47,7 @@
    -  загрузка письма в формате html
    -  отправление почты
 -  Отписка от рассылки    
+
+Локализация
+-----------
+-  Поменять французкий на русский

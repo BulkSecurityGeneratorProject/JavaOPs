@@ -23,7 +23,7 @@ Resources:
 
 Install
 ========
-For Windows 7:
+For Windows 7 SP1:
 -  Install cmder: http://gooseberrycreative.com/cmder/
 -  Change security politics (see cmder hints)
 -  Install PowerShell 4.0: 
