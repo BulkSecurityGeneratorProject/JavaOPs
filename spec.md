@@ -32,9 +32,9 @@
 Интеграция с почтовым сервером:
 -------
 -  Варианты
-   http://blog.pivotal.io/cloud-foundry-pivotal/products/sending-email-from-cloud-foundry-java-applications-with-sendgrid
-   https://github.com/cloudfoundry-incubator/notifications
-   http://docs.pivotal.io/pivotalcf/opsguide/notifications.html
+   -  http://blog.pivotal.io/cloud-foundry-pivotal/products/sending-email-from-cloud-foundry-java-applications-with-sendgrid
+   -  https://github.com/cloudfoundry-incubator/notifications
+   -  http://docs.pivotal.io/pivotalcf/opsguide/notifications.html
 
 -  Подтверждение почты при регистрации
 -  Напоминание пароля на почту
