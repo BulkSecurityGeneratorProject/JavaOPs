@@ -31,10 +31,11 @@
     
 Интеграция с почтовым сервером:
 -------
--  Рассмотреть варианты
-   -  через сконфигурированный smtp
-   -  через сервис рассылок (http://mailchimp.com/, JustClick.Ru)
-   -  почтовый сервис в облаке ? 
+-  Варианты
+   http://blog.pivotal.io/cloud-foundry-pivotal/products/sending-email-from-cloud-foundry-java-applications-with-sendgrid
+   https://github.com/cloudfoundry-incubator/notifications
+   http://docs.pivotal.io/pivotalcf/opsguide/notifications.html
+
 -  Подтверждение почты при регистрации
 -  Напоминание пароля на почту
 -  Организация отправки занятий для ведущих курс   

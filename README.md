@@ -16,7 +16,7 @@ Resources:
 -------
 -  <a href="http://habrahabr.ru/post/246349/">Yeoman для новичков</a>
 -  <a href="http://codemotion.ru/gulp-avtomatizaciya-processa-razrabotki-1427.html">Gulp — автоматизация процесса разработки</a>
--  <a href="http://habrahabr.ru/post/233827/>Основы работы с модулями в Node.js </a>
+-  <a href="http://habrahabr.ru/post/233827/">Основы работы с модулями в Node.js </a>
 
 <a href="spec.md">Техническое задание</a>
 -----------
