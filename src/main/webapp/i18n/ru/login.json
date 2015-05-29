@@ -1,0 +1,19 @@
+{
+    "login": {
+        "title": "Авторизация",
+        "form": {
+            "password": "Пароль",
+            "password.placeholder": "Ваш пароль",
+            "rememberme": "Автоматический вход",
+            "button": "Войти"
+        },
+        "messages": {
+            "error": {
+                "authentication": "<strong>Ошибка авторизации!</strong> Пожалуйста проверте логин и пароль и попробуйте снова."
+            }
+        },
+        "password" : {
+            "forgot": "Забыли пароль?"
+        }
+    }
+}

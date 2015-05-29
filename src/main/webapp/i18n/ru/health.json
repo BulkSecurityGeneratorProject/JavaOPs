@@ -1,0 +1,27 @@
+{
+    "health": {
+        "title": "Состояние системы",
+        "refresh.button": "Обновить",
+        "stacktrace": "Трассировка стека",
+        "details": {
+            "details": "Подробнее",
+            "properties": "Свойства",
+            "name": "Имя",
+            "value": "Значение",
+            "error": "Ошибка"
+        },
+        "indicator": {
+            "diskSpace": "Дисковое пространство",
+            "mail": "Email",
+            "db": "База данных"
+        },
+        "table": {
+            "service": "Сервис",
+            "status": "Статус"
+        },
+        "status": {
+            "UP": "Активен",
+            "DOWN": "Не активен"
+        }
+    }
+}
