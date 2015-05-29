@@ -1,0 +1,100 @@
+{
+    "global": {
+        "title": "jWebPlatform",
+        "browsehappy": "Вы используете<strong>устаревший</strong> браузер. Пожалуйста <a href=\"http://browsehappy.com/?locale=en\">обновите ваш браузер</a> .",
+        "menu": {
+            "home": "Главная",
+            "entities": {
+                "main": "Сущности",
+                "additionalEntity": "JHipster будет добавлять дополнительные объекты здесь"
+            },
+            "account": {
+                "main": "Учетная запись",
+                "settings": "Настройки",
+                "password": "Пароль",
+                "sessions": "Сессии",
+                "login": "Войти",
+                "logout": "Выход",
+                "register": "Регистрация"
+            },
+            "admin": {
+                "main": "Администрирование",
+                "tracker": "Пользовательский треккер",
+                "metrics": "Метрики",
+                "health": "Состояние системы",
+                "configuration": "Конфигурация",
+                "logs": "Логи",
+                "audits": "Аудит",
+                "apidocs": "API",
+                "database": "Базаданных"
+            },
+            "language": "Язык"
+        },
+        "form": {
+            "username": "Логин",
+            "username.placeholder": "Ваш логин",
+            "newpassword": "Пароль",
+            "newpassword.placeholder": "Ваш пароль",
+            "confirmpassword": "Подтвердите пароль",
+            "confirmpassword.placeholder": "Подтвердите Ваш пароль",
+            "email": "E-mail",
+            "email.placeholder": "Ваш e-mail"
+        },
+        "messages": {
+            "info": {
+                "authenticated": "Если вы хотите <a href=\"#/login\">авторизоваться</a>, вы можите попробовать следующие учетные записи:<br/>- Администратор (логин=\"admin\" пароль=\"admin\") <br/>- Пользователь (логин=\"user\" пароль=\"user\").",
+                "register": "У вас еще нет учетной записи? <a href=\"#/register\">Зарегистрировать новую учетную запись</a>"
+            },
+            "error": {
+                "dontmatch" : "Пароли не совпадают!"
+            },
+            "validate": {
+                "newpassword": {
+                    "required": "Требуется пароль.",
+                    "minlength": "Пароль должен быть не короче 5 символов.",
+                    "maxlength": "Пароль должен быть короче 50 символов.",
+                    "strength": "Надежный пароль:"
+                },
+                "confirmpassword": {
+                    "required": "Пароль требует подтверждения.",
+                    "minlength": "Подтвержденый пароль должен быть не короче 5 символов.",
+                    "maxlength": "Подтвержденый пароль должен быть короче 50 символов."
+                },
+                "email": {
+                    "required": "Требуется e-mail.",
+                    "invalid": "Неверный e-mail.",
+                    "minlength": "e-mail должен быть не короче 5 символов.",
+                    "maxlength": "e-mail должен быть короче 50 символов."
+                }
+            }
+        }
+    },
+    "entity": {
+        "action": {
+            "back": "Назад",
+            "cancel": "Сбросить",
+            "delete": "Удалить",
+            "edit": "Рекдактировать",
+            "save": "Сохранить",
+            "view": "Посмотреть"
+        },
+        "detail": {
+            "field": "Поле",
+            "value": "Значение"
+        },
+        "delete": {
+            "title": "Подтвердите операцию удаления"
+        },
+        "validation": {
+            "required": "Это поле обязательно для заполнения.",
+            "minlength": "Это поле должно быть не короче {{min}} символов.",
+            "maxlength": "Это поле должно быть короче {{max}} символов.",
+            "min": "Это поле должно быть больше чем {{min}}.",
+            "max": "Это поле должно быть меньше чем {{max}}.",
+            "pattern": "Это поле должно отвечать следующему шаблону {{pattern}}.",
+            "number": "Это поле должно быть числом.",
+            "datetimelocal": "Это поле должно быть датой и временем."
+        }
+    },
+    "footer": "Это Ваш футер"
+}

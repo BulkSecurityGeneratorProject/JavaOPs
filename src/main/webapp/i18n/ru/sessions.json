@@ -1,0 +1,15 @@
+{
+    "sessions": {
+        "title": "Активные сессии [<b>{{username}}</b>]",
+        "table": {
+            "ipaddress": "IP адрес",
+            "useragent": "Тип доступа",
+            "date": "Дата",
+            "button": "Анулировать"
+        },
+        "messages": {
+            "success": "<strong>Сессия анулирована!</strong>",
+            "error": "<strong>Произошла ошибка!</strong> Сессия не может быть анулирована."
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "settings": {
+        "title": "Настройки для [<b>{{username}}</b>]",
+        "form": {
+            "firstname": "Имя",
+            "firstname.placeholder": "Ваше имя",
+            "lastname": "Фамилия",
+            "lastname.placeholder": "Ваша фамилия",
+            "language": "Язык",
+            "button": "Сохранить"
+        },
+        "messages": {
+            "error": {
+                "fail": "<strong>Произошла ошибка!</strong> Настройки не могут быть сохранены.",
+                "emailexists": "<strong>E-mail уже использован!</strong> Пожалуйста введите другой e-mail."
+            },
+            "success": "<strong>Настройки сохранены!</strong>",
+            "validate": {
+                "firstname": {
+                    "required": "Имя обязательно для заполнения.",
+                    "minlength": "Имя не может быть короче 1 символа",
+                    "maxlength": "Имя должно быть короче 50 символов"
+                },
+                "lastname": {
+                    "required": "Фамилия обязательна для заполнения.",
+                    "minlength": "Фамилия не может быть короче 1 символа.",
+                    "maxlength": "Фаимиля должна быть короче 50 символов."
+                }
+            }
+        }
+    }
+}
