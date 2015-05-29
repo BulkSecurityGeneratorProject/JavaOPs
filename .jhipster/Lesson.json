@@ -1,0 +1,57 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "course",
+            "relationshipNameCapitalized": "Course",
+            "relationshipFieldName": "course",
+            "otherEntityName": "course",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Course",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "title",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Title",
+            "fieldNameUnderscored": "title",
+            "fieldInJavaBeanMethod": "Title",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "lesson_order",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Lesson_order",
+            "fieldNameUnderscored": "lesson_order",
+            "fieldInJavaBeanMethod": "Lesson_order",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Description",
+            "fieldNameUnderscored": "description",
+            "fieldInJavaBeanMethod": "Description",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150526215729",
+    "pagination": "no",
+    "validation": true
+}

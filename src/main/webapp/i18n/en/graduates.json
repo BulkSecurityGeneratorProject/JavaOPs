@@ -1,0 +1,19 @@
+{
+    "jwebplatformApp": {
+        "graduates" : {
+            "home": {
+                "title": "Graduates",
+                "createLabel": "Create a new Graduates",
+                "createOrEditLabel": "Create or edit a Graduates"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Graduates {{ id }}?"
+            },
+            "detail": {
+                "title": "Graduates"
+            },
+            "graduatesOrder": "Order",
+            "course": "course"
+        }
+    }
+}

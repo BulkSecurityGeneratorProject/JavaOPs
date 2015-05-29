@@ -1,0 +1,146 @@
+<div>
+
+    <h2 translate="jwebplatformApp.lesson.home.title">Lesson</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#saveLessonModal" ng-click="clear()">
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="jwebplatformApp.lesson.home.createLabel">Create a new Lesson</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="saveLessonModal" tabindex="-1" role="dialog" aria-labelledby="myLessonLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="save()" show-validation>
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myLessonLabel" translate="jwebplatformApp.lesson.home.createOrEditLabel">Create or edit a Lesson</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="lesson.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="jwebplatformApp.lesson.title">Title</label>
+                            <input type="text" class="form-control" name="title"
+                                   ng-model="lesson.title">
+
+                            <div ng-show="editForm.title.$invalid">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="jwebplatformApp.lesson.lessonOrder">Order</label>
+                            <input type="number" class="form-control" name="lessonOrder"
+                                   ng-model="lesson.lessonOrder">
+
+                            <div ng-show="editForm.lessonOrder.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.lessonOrder.$error.number" translate="entity.validation.number">
+                                    This field should be a number.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="jwebplatformApp.lesson.description">Description</label>
+                            <input type="text" class="form-control" name="description"
+                                   ng-model="lesson.description">
+
+                            <div ng-show="editForm.description.$invalid">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="jwebplatformApp.lesson.course">course</label>
+                            <select class="form-control" name="course" ng-model="lesson.course.id" ng-options="course.id as course.id for course in courses">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteLessonConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(lesson.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="jwebplatformApp.lesson.delete.question" translate-values="{id: '{{lesson.id}}'}">Are you sure you want to delete this Lesson?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="jwebplatformApp.lesson.title">Title</th>
+                    <th translate="jwebplatformApp.lesson.lessonOrder">Order</th>
+                    <th translate="jwebplatformApp.lesson.description">Description</th>
+                    <th translate="jwebplatformApp.lesson.course">course</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="lesson in lessons">
+                    <td><a ui-sref="lessonDetail({id:lesson.id})">{{lesson.id}}</a></td>
+                    <td>{{lesson.title}}</td>
+                    <td>{{lesson.lessonOrder}}</td>
+                    <td>{{lesson.description}}</td>
+                    <td>{{lesson.course.id}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="lessonDetail({id:lesson.id})"
+                                class="btn btn-info btn-sm">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="showUpdate(lesson.id)"
+                                class="btn btn-primary btn-sm">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(lesson.id)"
+                                class="btn btn-danger btn-sm">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

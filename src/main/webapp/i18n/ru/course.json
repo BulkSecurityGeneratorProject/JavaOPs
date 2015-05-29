@@ -1,0 +1,20 @@
+{
+    "jwebplatformApp": {
+        "course" : {
+            "home": {
+                "title": "Курс",
+                "createLabel": "Создать новый курс",
+                "createOrEditLabel": "Создать или редактировать курс"
+            },
+            "delete": {
+                "question": "Вы уверены, что хотите удалить курс {{ id }}?"
+            },
+            "detail": {
+                "title": "Курс"
+            },
+            "name": "Название",
+            "description": "Описание",
+            "graduates": "Выпуск"
+        }
+    }
+}

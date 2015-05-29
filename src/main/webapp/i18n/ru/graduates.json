@@ -1,0 +1,19 @@
+{
+    "jwebplatformApp": {
+        "graduates" : {
+            "home": {
+                "title": "Выпуск",
+                "createLabel": "Создать новый выпуск",
+                "createOrEditLabel": "Создать или редактировать новый выпуск"
+            },
+            "delete": {
+                "question": "Вы уверены что хотите удалить выпуск {{ id }}?"
+            },
+            "detail": {
+                "title": "Выпуск"
+            },
+            "graduatesOrder": "Номер",
+            "course": "Курс"
+        }
+    }
+}

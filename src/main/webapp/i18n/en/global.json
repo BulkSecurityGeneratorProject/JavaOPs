@@ -6,6 +6,9 @@
             "home": "Home",
             "entities": {
                 "main": "Entities",
+                "course": "Course",
+                "lesson": "Lesson",
+                "graduates": "Graduates",
                 "additionalEntity": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

@@ -22,7 +22,7 @@ import org.joda.time.DateTime;
 @Entity
 @Table(name = "JHI_USER")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-public class User extends AbstractAuditingEntity implements Serializable {
+public class User extends AbstractAuditingEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -199,13 +199,10 @@ public class User extends AbstractAuditingEntity implements Serializable {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-
         User user = (User) o;
-
         if (!login.equals(user.login)) {
             return false;
         }
-
         return true;
     }
 
@@ -218,7 +215,6 @@ public class User extends AbstractAuditingEntity implements Serializable {
     public String toString() {
         return "User{" +
                 "login='" + login + '\'' +
-                ", password='" + password + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +

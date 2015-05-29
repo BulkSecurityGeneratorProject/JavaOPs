@@ -6,7 +6,10 @@
             "home": "Главная",
             "entities": {
                 "main": "Сущности",
-                "additionalEntity": "JHipster будет добавлять дополнительные объекты здесь"
+                "course": "Course",
+                "lesson": "Lesson",
+                "graduates": "Graduates",
+                "additionalEntity": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
                 "main": "Учетная запись",

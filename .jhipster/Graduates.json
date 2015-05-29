@@ -1,0 +1,36 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "course",
+            "relationshipNameCapitalized": "Course",
+            "relationshipFieldName": "course",
+            "otherEntityName": "course",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Course",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "graduates_order",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Graduates_order",
+            "fieldNameUnderscored": "graduates_order",
+            "fieldInJavaBeanMethod": "Graduates_order",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150529212113",
+    "pagination": "no",
+    "validation": false
+}

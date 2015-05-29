@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="jwebplatformApp.lesson.detail.title">Lesson</span> {{lesson.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="jwebplatformApp.lesson.title">Title</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{lesson.title}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jwebplatformApp.lesson.lessonOrder">Order</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{lesson.lessonOrder}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jwebplatformApp.lesson.description">Description</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{lesson.description}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="jwebplatformApp.lesson.course">course</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{lesson.course.id}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="lesson"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

@@ -1,0 +1,21 @@
+{
+    "jwebplatformApp": {
+        "lesson" : {
+            "home": {
+                "title": "Урок",
+                "createLabel": "Создать новый урок",
+                "createOrEditLabel": "Создать или редактировать урок"
+            },
+            "delete": {
+                "question": "Вы уверены что хотите удалить Урок {{ id }}?"
+            },
+            "detail": {
+                "title": "Урок"
+            },
+            "title": "Название",
+            "lessonOrder": "Номер",
+            "description": "Описание",
+            "course": "Курс"
+        }
+    }
+}
