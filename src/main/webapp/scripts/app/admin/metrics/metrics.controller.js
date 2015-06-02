@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jwebplatformApp')
+angular.module('javaopsApp')
     .controller('MetricsController', function ($scope, MonitoringService) {
         $scope.metrics = {};
         $scope.updatingMetrics = true;

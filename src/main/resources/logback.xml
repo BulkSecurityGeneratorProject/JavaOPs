@@ -27,7 +27,7 @@
     </appender>
 -->
 
-    <logger name="ru.javawebinar.jweb" level="${logback.loglevel}"/>
+    <logger name="ru.javaops.platform" level="${logback.loglevel}"/>
 
     <logger name="javax.activation" level="WARN"/>
     <logger name="javax.mail" level="WARN"/>

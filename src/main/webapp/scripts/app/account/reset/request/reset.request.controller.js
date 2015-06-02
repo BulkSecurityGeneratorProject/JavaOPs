@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jwebplatformApp')
+angular.module('javaopsApp')
     .controller('RequestResetController', function ($rootScope, $scope, $state, $timeout, Auth) {
 
         $scope.success = null;

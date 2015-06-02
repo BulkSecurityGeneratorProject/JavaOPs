@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jwebplatformApp')
+angular.module('javaopsApp')
     .controller('CourseDetailController', function ($scope, $stateParams, Course, Graduates) {
         $scope.course = {};
         $scope.load = function (id) {

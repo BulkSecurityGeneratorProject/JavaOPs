@@ -1,4 +1,4 @@
-#eLerning JWebPlatform
+#Java Online Projects Platform (JavaOPs)
 
 Open source platform for online edication.
 ==================
@@ -21,7 +21,7 @@ Resources:
 <a href="spec.md">Техническое задание</a>
 -----------
 
-Install
+Install 
 ========
 For Windows 7 SP1:
 -  Install cmder: http://gooseberrycreative.com/cmder/
@@ -34,3 +34,10 @@ For Windows 7 SP1:
 https://jhipster.github.io/installation.html
 
 mvn dependency:sources
+
+Deploy
+=======
+yo jhipster:cloudfoundry
+cf push -f ./deploy/cloudfoundry/manifest.yml -p target/javaops-platform-0.0.1-SNAPSHOT.war
+
+http://stackoverflow.com/questions/27156905/jhipster-cloudfoundary-throwing-error-uploading-application-error

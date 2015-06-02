@@ -1,7 +1,7 @@
 {
-  "name": "jwebplatform",
+  "name": "JavaOPs",
   "version": "0.0.0",
-  "description": "Description for jWebPlatform",
+  "description": "Description for JavaOPs",
   "private": true,
   "dependencies": {
   },

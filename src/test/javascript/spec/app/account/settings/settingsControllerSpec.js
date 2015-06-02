@@ -2,7 +2,7 @@
 
 describe('Controllers Tests ', function () {
 
-    beforeEach(module('jwebplatformApp'));
+    beforeEach(module('javaopsApp'));
 
     var $scope, q, Principal, Auth;
 

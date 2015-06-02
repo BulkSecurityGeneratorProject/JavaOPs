@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jwebplatformApp')
+angular.module('javaopsApp')
     .controller('LessonController', function ($scope, Lesson, Course) {
         $scope.lessons = [];
         $scope.courses = Course.query();

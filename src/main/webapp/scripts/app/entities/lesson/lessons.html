@@ -1,12 +1,12 @@
 <div>
 
-    <h2 translate="jwebplatformApp.lesson.home.title">Lesson</h2>
+    <h2 translate="javaopsApp.lesson.home.title">Lesson</h2>
 
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <button class="btn btn-primary" data-toggle="modal" data-target="#saveLessonModal" ng-click="clear()">
-                    <span class="glyphicon glyphicon-flash"></span> <span translate="jwebplatformApp.lesson.home.createLabel">Create a new Lesson</span>
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="javaopsApp.lesson.home.createLabel">Create a new Lesson</span>
                 </button>
             </div>
         </div>
@@ -21,7 +21,7 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                                 ng-click="clear()">&times;</button>
-                        <h4 class="modal-title" id="myLessonLabel" translate="jwebplatformApp.lesson.home.createOrEditLabel">Create or edit a Lesson</h4>
+                        <h4 class="modal-title" id="myLessonLabel" translate="javaopsApp.lesson.home.createOrEditLabel">Create or edit a Lesson</h4>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
@@ -31,7 +31,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label translate="jwebplatformApp.lesson.title">Title</label>
+                            <label translate="javaopsApp.lesson.title">Title</label>
                             <input type="text" class="form-control" name="title"
                                    ng-model="lesson.title">
 
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label translate="jwebplatformApp.lesson.lessonOrder">Order</label>
+                            <label translate="javaopsApp.lesson.lessonOrder">Order</label>
                             <input type="number" class="form-control" name="lessonOrder"
                                    ng-model="lesson.lessonOrder">
 
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label translate="jwebplatformApp.lesson.description">Description</label>
+                            <label translate="javaopsApp.lesson.description">Description</label>
                             <input type="text" class="form-control" name="description"
                                    ng-model="lesson.description">
 
@@ -60,7 +60,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label translate="jwebplatformApp.lesson.course">course</label>
+                            <label translate="javaopsApp.lesson.course">course</label>
                             <select class="form-control" name="course" ng-model="lesson.course.id" ng-options="course.id as course.id for course in courses">
                             </select>
                         </div>
@@ -88,7 +88,7 @@
                         <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
                     </div>
                     <div class="modal-body">
-                        <p translate="jwebplatformApp.lesson.delete.question" translate-values="{id: '{{lesson.id}}'}">Are you sure you want to delete this Lesson?</p>
+                        <p translate="javaopsApp.lesson.delete.question" translate-values="{id: '{{lesson.id}}'}">Are you sure you want to delete this Lesson?</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
@@ -108,10 +108,10 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th translate="jwebplatformApp.lesson.title">Title</th>
-                    <th translate="jwebplatformApp.lesson.lessonOrder">Order</th>
-                    <th translate="jwebplatformApp.lesson.description">Description</th>
-                    <th translate="jwebplatformApp.lesson.course">course</th>
+                    <th translate="javaopsApp.lesson.title">Title</th>
+                    <th translate="javaopsApp.lesson.lessonOrder">Order</th>
+                    <th translate="javaopsApp.lesson.description">Description</th>
+                    <th translate="javaopsApp.lesson.course">course</th>
                     <th></th>
                 </tr>
             </thead>

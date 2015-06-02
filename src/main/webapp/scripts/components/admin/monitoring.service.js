@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jwebplatformApp')
+angular.module('javaopsApp')
     .factory('MonitoringService', function ($rootScope, $http) {
         return {
             getMetrics: function () {

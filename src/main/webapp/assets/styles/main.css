@@ -71,7 +71,7 @@ Browser Upgrade Prompt
     display: inline-block;
     width: 347px;
     height: 497px;
-    background: url("../images/hipster.png") no-repeat center top;
+    background: url("../images/javaops.png") no-repeat center top;
     background-size: contain;
 }
 
@@ -84,7 +84,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .hipster {
-        background: url("../images/hipster2x.png") no-repeat center top;
+        background: url("../images/javaops2.png") no-repeat center top;
         background-size: contain;
     }
 }
@@ -143,5 +143,15 @@ ul#strength {
     height:5px;
     margin-right:1px;
     width:20px;
+}
+footer {
+    border-top: 1px solid #eee;
+    width: 1170px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    font-size: 75%;
+    color: #CCC;
 }
 /* end Password strength bar style */

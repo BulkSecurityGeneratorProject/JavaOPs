@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jwebplatformApp')
+angular.module('javaopsApp')
     .controller('HealthController', function ($scope, MonitoringService) {
         $scope.updatingHealth = true;
         $scope.separator = '.';

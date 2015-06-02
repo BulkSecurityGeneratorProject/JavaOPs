@@ -1,12 +1,12 @@
 <div>
 
-    <h2 translate="jwebplatformApp.course.home.title">Course</h2>
+    <h2 translate="javaopsApp.course.home.title">Course</h2>
 
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <button class="btn btn-primary" data-toggle="modal" data-target="#saveCourseModal" ng-click="clear()">
-                    <span class="glyphicon glyphicon-flash"></span> <span translate="jwebplatformApp.course.home.createLabel">Create a new Course</span>
+                    <span class="glyphicon glyphicon-flash"></span> <span translate="javaopsApp.course.home.createLabel">Create a new Course</span>
                 </button>
             </div>
         </div>
@@ -21,7 +21,7 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
                                 ng-click="clear()">&times;</button>
-                        <h4 class="modal-title" id="myCourseLabel" translate="jwebplatformApp.course.home.createOrEditLabel">Create or edit a Course</h4>
+                        <h4 class="modal-title" id="myCourseLabel" translate="javaopsApp.course.home.createOrEditLabel">Create or edit a Course</h4>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
@@ -31,7 +31,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label translate="jwebplatformApp.course.name">Name</label>
+                            <label translate="javaopsApp.course.name">Name</label>
                             <input type="text" class="form-control" name="name"
                                    ng-model="course.name">
 
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label translate="jwebplatformApp.course.description">Description</label>
+                            <label translate="javaopsApp.course.description">Description</label>
                             <input type="text" class="form-control" name="description"
                                    ng-model="course.description">
 
@@ -71,7 +71,7 @@
                         <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
                     </div>
                     <div class="modal-body">
-                        <p translate="jwebplatformApp.course.delete.question" translate-values="{id: '{{course.id}}'}">Are you sure you want to delete this Course?</p>
+                        <p translate="javaopsApp.course.delete.question" translate-values="{id: '{{course.id}}'}">Are you sure you want to delete this Course?</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
@@ -91,8 +91,8 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th translate="jwebplatformApp.course.name">Name</th>
-                    <th translate="jwebplatformApp.course.description">Description</th>
+                    <th translate="javaopsApp.course.name">Name</th>
+                    <th translate="javaopsApp.course.description">Description</th>
                     <th></th>
                 </tr>
             </thead>

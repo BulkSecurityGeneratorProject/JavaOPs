@@ -1,6 +1,6 @@
 {
     "global": {
-        "title": "jWebPlatform",
+        "title": "JavaOPs",
         "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
         "menu": {
             "home": "Home",
@@ -99,5 +99,5 @@
             "datetimelocal": "This field should be a date and time."
         }
     },
-    "footer": "This is your footer"
+    "footer": "<script type='text/javascript' src='//yastatic.net/share/share.js' charset='utf-8'></script><div class='yashare-auto-init' data-yashareL10n='ru' data-yashareType='button' data-yashareQuickServices='vkontakte,facebook,twitter,odnoklassniki,moimir'></div><br>Java обучение курсы online онлайн обучение проект e-lerning семинар вебинар программирование Санкт-Петербург СПб практика джава удаленное обучение корпоративное обучение JPA Maven Spring Hibernate REST webinar"
 }

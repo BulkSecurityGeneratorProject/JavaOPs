@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jwebplatformApp')
+angular.module('javaopsApp')
     .config(function ($stateProvider) {
         $stateProvider
             .state('lesson', {
@@ -8,7 +8,7 @@ angular.module('jwebplatformApp')
                 url: '/lesson',
                 data: {
                     roles: ['ROLE_USER'],
-                    pageTitle: 'jwebplatformApp.lesson.home.title'
+                    pageTitle: 'javaopsApp.lesson.home.title'
                 },
                 views: {
                     'content@': {
@@ -28,7 +28,7 @@ angular.module('jwebplatformApp')
                 url: '/lesson/:id',
                 data: {
                     roles: ['ROLE_USER'],
-                    pageTitle: 'jwebplatformApp.lesson.detail.title'
+                    pageTitle: 'javaopsApp.lesson.detail.title'
                 },
                 views: {
                     'content@': {

@@ -2,7 +2,7 @@
 
 describe('Directive Tests ', function () {
 
-    beforeEach(module('jwebplatformApp'));
+    beforeEach(module('javaopsApp'));
 
     var elm, scope, $httpBackend;
 

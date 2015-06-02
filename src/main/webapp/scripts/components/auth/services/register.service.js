@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jwebplatformApp')
+angular.module('javaopsApp')
     .factory('Register', function ($resource) {
         return $resource('api/register', {}, {
         });

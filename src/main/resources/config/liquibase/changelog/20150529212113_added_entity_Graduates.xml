@@ -12,13 +12,13 @@
     -->
     <changeSet id="20150529212113" author="jhipster">
         <createTable tableName="GRADUATES">
-            <column name="id" type="bigint" autoIncrement="true">
+            <column name="id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="graduates_order" type="integer"/>
-            <column name="course_id" type="bigint"/>
+            <column name="course_id" type="int"/>
         </createTable>
-        
+
         <addForeignKeyConstraint baseColumnNames="course_id"
                                  baseTableName="GRADUATES"
                                  constraintName="fk_graduates_course_id"

@@ -17,7 +17,7 @@
     -->
     <changeSet id="00000000000001" author="jhipster">
         <createTable tableName="JHI_USER">
-            <column name="id" type="bigint" autoIncrement="true">
+            <column name="id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="login" type="varchar(50)">
@@ -67,7 +67,7 @@
         </createTable>
 
         <createTable tableName="JHI_USER_AUTHORITY">
-            <column name="user_id" type="bigint">
+            <column name="user_id" type="int">
                 <constraints nullable="false"/>
             </column>
             <column name="authority_name" type="varchar(50)">
@@ -81,7 +81,7 @@
             <column name="series" type="varchar(255)">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="user_id" type="bigint"/>
+            <column name="user_id" type="int"/>
             <column name="token_value" type="varchar(255)">
                 <constraints nullable="false" />
             </column>
@@ -128,7 +128,7 @@
                   tableName="JHI_USER_AUTHORITY"/>
 
         <createTable tableName="JHI_PERSISTENT_AUDIT_EVENT">
-            <column name="event_id" type="bigint" autoIncrement="true">
+            <column name="id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="principal" type="varchar(255)">
@@ -139,7 +139,7 @@
         </createTable>
 
         <createTable tableName="JHI_PERSISTENT_AUDIT_EVENT_DATA">
-            <column name="event_id" type="bigint">
+            <column name="id" type="int">
                 <constraints nullable="false"/>
             </column>
             <column name="name" type="varchar(255)">
@@ -147,7 +147,7 @@
             </column>
             <column name="value" type="varchar(255)"/>
         </createTable>
-        <addPrimaryKey columnNames="event_id, name" tableName="JHI_PERSISTENT_AUDIT_EVENT_DATA"/>
+        <addPrimaryKey columnNames="id, name" tableName="JHI_PERSISTENT_AUDIT_EVENT_DATA"/>
 
         <createIndex indexName="idx_persistent_audit_event"
                      tableName="JHI_PERSISTENT_AUDIT_EVENT"
@@ -159,14 +159,14 @@
         <createIndex indexName="idx_persistent_audit_event_data"
                      tableName="JHI_PERSISTENT_AUDIT_EVENT_DATA"
                      unique="false">
-            <column name="event_id" type="bigint"/>
+            <column name="id" type="int"/>
         </createIndex>
 
-        <addForeignKeyConstraint baseColumnNames="event_id"
+        <addForeignKeyConstraint baseColumnNames="id"
                                  baseTableName="JHI_PERSISTENT_AUDIT_EVENT_DATA"
                                  constraintName="FK_event_persistent_audit_event_data"
-                                 referencedColumnNames="event_id"
+                                 referencedColumnNames="id"
                                  referencedTableName="JHI_PERSISTENT_AUDIT_EVENT"/>
     </changeSet>
-    
+
 </databaseChangeLog>

@@ -21,13 +21,13 @@ mail:
     protocol: smtp
     tls: false
     auth: false
-    from: jWebPlatform@localhost
+    from: JavaOPs@localhost
 
 
 swagger:
-    title: jWebPlatform API
-    description: jWebPlatform applications and beyond!
-    termsOfServiceUrl: http://jhipster.github.io/
+    title: JavaOPs API
+    description: JavaOPs applications and beyond!
+    termsOfServiceUrl: https://github.com/JavaWebinar/JavaOPs
     contact:
     license: Apache 2.0
     licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.html

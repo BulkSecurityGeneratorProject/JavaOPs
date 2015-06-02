@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jwebplatformApp')
+angular.module('javaopsApp')
     .factory('Lesson', function ($resource) {
         return $resource('api/lessons/:id', {}, {
             'query': { method: 'GET', isArray: true},

@@ -1,7 +1,7 @@
 /* globals $ */
 'use strict';
 
-angular.module('jwebplatformApp')
+angular.module('javaopsApp')
     .directive('passwordStrengthBar', function () {
         return {
             replace: true,

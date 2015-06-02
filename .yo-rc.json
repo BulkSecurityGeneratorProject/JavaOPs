@@ -1,8 +1,8 @@
 {
   "generator-jhipster": {
-    "baseName": "jWebPlatform",
-    "packageName": "ru.javawebinar.jweb",
-    "packageFolder": "ru/javawebinar/jweb",
+    "baseName": "JavaOPs",
+    "packageName": "ru.javaops.platform",
+    "packageFolder": "ru/javaops/platform",
     "authenticationType": "session",
     "hibernateCache": "ehcache",
     "clusteredHttpSession": "no",

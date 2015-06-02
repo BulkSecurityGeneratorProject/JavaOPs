@@ -1,8 +1,8 @@
 /* globals $ */
 'use strict';
 
-angular.module('jwebplatformApp')
-    .directive('jwebplatformAppPager', function() {
+angular.module('javaopsApp')
+    .directive('javaopsAppPager', function() {
         return {
             templateUrl: 'scripts/components/form/pager.html'
         };

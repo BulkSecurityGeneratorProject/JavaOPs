@@ -1,4 +1,4 @@
-angular.module('jwebplatformApp')
+angular.module('javaopsApp')
     .config(function ($stateProvider) {
         $stateProvider
             .state('tracker', {

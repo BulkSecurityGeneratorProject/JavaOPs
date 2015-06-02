@@ -2,7 +2,7 @@
 
 describe('Services Tests ', function () {
 
-    beforeEach(module('jwebplatformApp'));
+    beforeEach(module('javaopsApp'));
 
     describe('Auth', function () {
         var $httpBackend, spiedLocalStorageService, authService, spiedAuthServerProvider;
@@ -13,7 +13,7 @@ describe('Services Tests ', function () {
             authService = Auth;
             spiedAuthServerProvider = AuthServerProvider;
             //Request on app init
-            $httpBackend.expectPOST(/api\/logout\?cacheBuster=\d+/).respond(200, ''); 
+            $httpBackend.expectPOST(/api\/logout\?cacheBuster=\d+/).respond(200, '');
 
             $httpBackend.expectGET('scripts/components/navbar/navbar.html').respond({});
             $httpBackend.expectGET('i18n/en/global.json').respond(200, '');
@@ -28,7 +28,7 @@ describe('Services Tests ', function () {
             $httpBackend.verifyNoOutstandingExpectation();
             $httpBackend.verifyNoOutstandingRequest();
         });
-        
+
         it('should call backend on logout then call authServerProvider.logout', function(){
             //GIVEN
             //Set spy
