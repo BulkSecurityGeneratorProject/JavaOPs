@@ -23,10 +23,9 @@ import org.joda.time.DateTime;
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class User extends AbstractAuditingEntity {
 
-    @NotNull
-    @Pattern(regexp = "^[a-z0-9]*$")
-    @Size(min = 1, max = 50)
-    @Column(length = 50, unique = true, nullable = false)
+    @Email
+    @Size(max = 100)
+    @Column(length = 50, unique = true)
     private String login;
 
     @JsonIgnore
@@ -42,11 +41,6 @@ public class User extends AbstractAuditingEntity {
     @Size(max = 50)
     @Column(name = "last_name", length = 50)
     private String lastName;
-
-    @Email
-    @Size(max = 100)
-    @Column(length = 100, unique = true)
-    private String email;
 
     @Column(nullable = false)
     private boolean activated = false;
@@ -112,14 +106,6 @@ public class User extends AbstractAuditingEntity {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public boolean getActivated() {
@@ -204,7 +190,6 @@ public class User extends AbstractAuditingEntity {
                 "login='" + login + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
                 ", activated='" + activated + '\'' +
                 ", langKey='" + langKey + '\'' +
                 ", activationKey='" + activationKey + '\'' +

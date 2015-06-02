@@ -45,7 +45,7 @@
         },
         "messages": {
             "info": {
-                "authenticated": "Если вы хотите <a href=\"#/login\">авторизоваться</a>, вы можите попробовать следующие учетные записи:<br/>- Администратор (логин=\"admin\" пароль=\"admin\") <br/>- Пользователь (логин=\"user\" пароль=\"user\").",
+                "authenticated": "Если вы хотите <a href=\"#/login\">авторизоваться</a>, вы можите попробовать следующие учетные записи:<br/>- Администратор (логин=\"admin@localhost\" пароль=\"admin\") <br/>- Пользователь (логин=\"user@localhost\" пароль=\"user\").",
                 "register": "У вас еще нет учетной записи? <a href=\"#/register\">Зарегистрировать новую учетную запись</a>"
             },
             "error": {
@@ -99,5 +99,5 @@
             "datetimelocal": "Это поле должно быть датой и временем."
         }
     },
-    "footer": "<script type='text/javascript' src='//yastatic.net/share/share.js' charset='utf-8'></script><div class='yashare-auto-init' data-yashareL10n='ru' data-yashareType='button' data-yashareQuickServices='vkontakte,facebook,twitter,odnoklassniki,moimir'></div><br>Java обучение курсы online онлайн обучение проект e-lerning семинар вебинар программирование Санкт-Петербург СПб практика джава удаленное обучение корпоративное обучение JPA Maven Spring Hibernate REST webinar"
+    "footer": "<script type='text/javascript' src='//yastatic.net/share/share.js' charset='utf-8'></script><div class='yashare-auto-init' data-yashareL10n='ru' data-yashareType='button' data-yashareQuickServices='vkontakte,facebook,twitter,odnoklassniki,moimir'></div>"
 }

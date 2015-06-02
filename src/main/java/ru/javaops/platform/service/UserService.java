@@ -76,7 +76,7 @@ public class UserService {
     }
 
     public Optional<User> requestPasswordReset(String mail) {
-       return userRepository.findOneByEmail(mail)
+       return userRepository.findOneByLogin(mail)
            .map(user -> {
                user.setResetKey(RandomUtil.generateResetKey());
                user.setResetDate(DateTime.now());
@@ -85,7 +85,7 @@ public class UserService {
            });
     }
 
-    public User createUserInformation(String login, String password, String firstName, String lastName, String email,
+    public User createUserInformation(String login, String password, String firstName, String lastName,
                                       String langKey) {
 
         User newUser = new User();
@@ -97,7 +97,6 @@ public class UserService {
         newUser.setPassword(encryptedPassword);
         newUser.setFirstName(firstName);
         newUser.setLastName(lastName);
-        newUser.setEmail(email);
         newUser.setLangKey(langKey);
         // new user is not active
         newUser.setActivated(false);
@@ -110,11 +109,10 @@ public class UserService {
         return newUser;
     }
 
-    public void updateUserInformation(String firstName, String lastName, String email, String langKey) {
+    public void updateUserInformation(String firstName, String lastName, String langKey) {
         userRepository.findOneByLogin(SecurityUtils.getCurrentLogin()).ifPresent(u -> {
             u.setFirstName(firstName);
             u.setLastName(lastName);
-            u.setEmail(email);
             u.setLangKey(langKey);
             userRepository.save(u);
             log.debug("Changed Information for User: {}", u);

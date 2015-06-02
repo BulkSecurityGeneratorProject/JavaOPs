@@ -56,12 +56,10 @@ public class AccountResource {
     @Timed
     public ResponseEntity<?> registerAccount(@Valid @RequestBody UserDTO userDTO, HttpServletRequest request) {
         return userRepository.findOneByLogin(userDTO.getLogin())
-            .map(user -> new ResponseEntity<>("login already in use", HttpStatus.BAD_REQUEST))
-            .orElseGet(() -> userRepository.findOneByEmail(userDTO.getEmail())
-                .map(user -> new ResponseEntity<>("e-mail address already in use", HttpStatus.BAD_REQUEST))
+            .map(user -> new ResponseEntity<>("e-mail already in use", HttpStatus.BAD_REQUEST))
                 .orElseGet(() -> {
                     User user = userService.createUserInformation(userDTO.getLogin(), userDTO.getPassword(),
-                    userDTO.getFirstName(), userDTO.getLastName(), userDTO.getEmail().toLowerCase(),
+                    userDTO.getFirstName(), userDTO.getLastName(),
                     userDTO.getLangKey());
                     String baseUrl = request.getScheme() + // "http"
                     "://" +                                // "://"
@@ -71,7 +69,7 @@ public class AccountResource {
 
                     mailService.sendActivationEmail(user, baseUrl);
                     return new ResponseEntity<>(HttpStatus.CREATED);
-                })
+                }
         );
     }
 
@@ -115,7 +113,6 @@ public class AccountResource {
                     null,
                     user.getFirstName(),
                     user.getLastName(),
-                    user.getEmail(),
                     user.getLangKey(),
                     user.getAuthorities().stream().map(Authority::getName).collect(Collectors.toCollection(LinkedList::new))),
                 HttpStatus.OK))
@@ -134,7 +131,7 @@ public class AccountResource {
             .findOneByLogin(userDTO.getLogin())
             .filter(u -> u.getLogin().equals(SecurityUtils.getCurrentLogin()))
             .map(u -> {
-                userService.updateUserInformation(userDTO.getFirstName(), userDTO.getLastName(), userDTO.getEmail(),
+                userService.updateUserInformation(userDTO.getFirstName(), userDTO.getLastName(),
                     userDTO.getLangKey());
                 return new ResponseEntity<String>(HttpStatus.OK);
             })

@@ -19,8 +19,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     Optional<User> findOneByResetKey(String resetKey);
 
-    Optional<User> findOneByEmail(String email);
-
     Optional<User> findOneByLogin(String login);
 
     void delete(User t);
