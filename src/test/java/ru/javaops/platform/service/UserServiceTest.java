@@ -61,10 +61,10 @@ public class UserServiceTest {
         Optional<User> maybeUser = userService.requestPasswordReset("john.doe@localhost");
         assertThat(maybeUser.isPresent()).isFalse();
 
-        maybeUser = userService.requestPasswordReset("admin@localhost");
+        maybeUser = userService.requestPasswordReset("admin@gmail.com");
         assertThat(maybeUser.isPresent()).isTrue();
 
-        assertThat(maybeUser.get().getLogin()).isEqualTo("admin@localhost");
+        assertThat(maybeUser.get().getLogin()).isEqualTo("admin@gmail.com");
         assertThat(maybeUser.get().getResetDate()).isNotNull();
         assertThat(maybeUser.get().getResetKey()).isNotNull();
 

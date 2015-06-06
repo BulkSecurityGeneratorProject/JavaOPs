@@ -301,7 +301,7 @@ public class User extends AbstractAuditingEntity {
     @Override
     public String toString() {
         return "User{" +
-                "login='" + login + '\'' +
+                "  login='" + login + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", location='" + location + '\'' +

@@ -102,7 +102,7 @@ public class UserDTO {
     @Override
     public String toString() {
         return "UserDTO{" +
-        "login='" + login + '\'' +
+        "  login='" + login + '\'' +
         ", password='" + password + '\'' +
         ", firstName='" + firstName + '\'' +
         ", lastName='" + lastName + '\'' +
