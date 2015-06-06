@@ -59,8 +59,8 @@ public class AccountResource {
             .map(user -> new ResponseEntity<>("e-mail already in use", HttpStatus.BAD_REQUEST))
                 .orElseGet(() -> {
                     User user = userService.createUserInformation(userDTO.getLogin(), userDTO.getPassword(),
-                    userDTO.getFirstName(), userDTO.getLastName(),
-                    userDTO.getLangKey());
+                    userDTO.getFirstName(), userDTO.getLastName(), userDTO.getLocation(), userDTO.getWhereLeanedAboutCourse(),
+                    userDTO.getPhone(), userDTO.getSkype(), userDTO.getLangKey());
                     String baseUrl = request.getScheme() + // "http"
                     "://" +                                // "://"
                     request.getServerName() +              // "myhost"
@@ -113,6 +113,10 @@ public class AccountResource {
                     null,
                     user.getFirstName(),
                     user.getLastName(),
+                    user.getLocation(),
+                    user.getWhereLeanedAboutCourse(),
+                    user.getPhone(),
+                    user.getSkype(),
                     user.getLangKey(),
                     user.getAuthorities().stream().map(Authority::getName).collect(Collectors.toCollection(LinkedList::new))),
                 HttpStatus.OK))

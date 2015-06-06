@@ -25,7 +25,9 @@ public class User extends AbstractAuditingEntity {
 
     @Email
     @Size(max = 100)
-    @Column(length = 50, unique = true)
+    @NotNull
+    @Column(length = 100, unique = true)
+    @Pattern(regexp = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@gmail.com")
     private String login;
 
     @JsonIgnore
@@ -34,13 +36,45 @@ public class User extends AbstractAuditingEntity {
     @Column(length = 100)
     private String password;
 
-    @Size(max = 50)
+    @Size(min = 2, max = 50)
     @Column(name = "first_name", length = 50)
     private String firstName;
 
-    @Size(max = 50)
+    @Size(min = 2, max = 50)
     @Column(name = "last_name", length = 50)
     private String lastName;
+
+    @Size(max = 250)
+    private String photo;
+
+    @Size(min = 3, max = 50)
+    private String location;
+
+    @Size(max = 100)
+    @Column(name = "where_learned_about_course", length = 100)
+    private String whereLeanedAboutCourse;
+
+    @Size(max = 12)
+    private String phone;
+
+    @Size(max = 500)
+    @Column(name = "about_me", length = 500)
+    private String aboutMe;
+
+    @Size(max = 100)
+    private String website;
+
+    @Size(max = 50)
+    private String company;
+
+    @Size(max = 50)
+    private String skype;
+
+    @Size(max = 100)
+    private String github;
+
+    @Size(max = 100)
+    private String vk;
 
     @Column(nullable = false)
     private boolean activated = false;
@@ -106,6 +140,86 @@ public class User extends AbstractAuditingEntity {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public String getWhereLeanedAboutCourse() {
+        return whereLeanedAboutCourse;
+    }
+
+    public void setWhereLeanedAboutCourse(String whereLeanedAboutCourse) {
+        this.whereLeanedAboutCourse = whereLeanedAboutCourse;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getAboutMe() {
+        return aboutMe;
+    }
+
+    public void setAboutMe(String aboutMe) {
+        this.aboutMe = aboutMe;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public String getSkype() {
+        return skype;
+    }
+
+    public void setSkype(String skype) {
+        this.skype = skype;
+    }
+
+    public String getGithub() {
+        return github;
+    }
+
+    public void setGithub(String github) {
+        this.github = github;
+    }
+
+    public String getVk() {
+        return vk;
+    }
+
+    public void setVk(String vk) {
+        this.vk = vk;
     }
 
     public boolean getActivated() {
@@ -190,6 +304,10 @@ public class User extends AbstractAuditingEntity {
                 "login='" + login + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", location='" + location + '\'' +
+                ", whereLeanedAboutCourse='" + whereLeanedAboutCourse + '\'' +
+                ", phone='" + phone + '\'' +
+                ", skype='" + skype +
                 ", activated='" + activated + '\'' +
                 ", langKey='" + langKey + '\'' +
                 ", activationKey='" + activationKey + '\'' +

@@ -149,6 +149,10 @@ public class AccountResourceTest {
             "password",             // password
             "Joe",                  // firstName
             "Shmoe",                // lastName
+            "Moscow",               //location
+            "facebook",             //where know
+            "+73454340321",          //phone
+            "mySkype",               // skype
             "en",                   // langKey
             Arrays.asList(AuthoritiesConstants.USER)
         );
@@ -171,6 +175,10 @@ public class AccountResourceTest {
             "password",             // password
             "Funky",                // firstName
             "One",                  // lastName
+            "Samara",               //location
+            "vk",             //where know
+            "+72454340321",          //phone
+            "skype",               // skype
             "en",                   // langKey
             Arrays.asList(AuthoritiesConstants.USER)
         );
@@ -193,6 +201,10 @@ public class AccountResourceTest {
             "password",         // password
             "Bob",              // firstName
             "Green",            // lastName
+            "St Peterburg",               //location
+            "my friend",             //where know
+            "+73454340121",          //phone
+            "BobGreen",               // skype
             "en",               // langKey
             Arrays.asList(AuthoritiesConstants.USER)
         );
@@ -216,13 +228,17 @@ public class AccountResourceTest {
             "password",             // password
             "Alice",                // firstName
             "Something",            // lastName
+            "San Francisco",               //location
+            "facebook",             //where know
+            "+73451340321",          //phone
+            "Alice",               // skype
             "en",                   // langKey
             Arrays.asList(AuthoritiesConstants.USER)
         );
 
         // Duplicate login, different e-mail
-        UserDTO dup = new UserDTO("alicejr@example.com", u.getPassword(), u.getLogin(), u.getLastName(),
-             u.getLangKey(), u.getRoles());
+        UserDTO dup = new UserDTO("alicejr@example.com", u.getPassword(), u.getLogin(), u.getLastName(), u.getLocation(),
+             u.getWhereLeanedAboutCourse(), u.getPhone(), u.getSkype(), u.getLangKey(), u.getRoles());
 
         // Good user
         restMvc.perform(
@@ -251,13 +267,17 @@ public class AccountResourceTest {
             "password",             // password
             "John",                 // firstName
             "Doe",                  // lastName
+            "London",               //location
+            "",             //where know
+            "+71454340321",          //phone
+            "John",               // skype
             "en",                   // langKey
             Arrays.asList(AuthoritiesConstants.USER)
         );
 
         // Duplicate e-mail, different login
-        UserDTO dup = new UserDTO(u.getLogin(), u.getPassword(), u.getLogin(), u.getLastName(),
-            u.getLangKey(), u.getRoles());
+        UserDTO dup = new UserDTO(u.getLogin(), u.getPassword(), u.getLogin(), u.getLastName(), u.getLocation(),
+            u.getWhereLeanedAboutCourse(), u.getPhone(), u.getSkype(), u.getLangKey(), u.getRoles());
 
         // Good user
         restMvc.perform(
@@ -285,6 +305,10 @@ public class AccountResourceTest {
             "password",             // password
             "Bad",                  // firstName
             "Guy",                  // lastName
+            "Madrid",               //location
+            "forum",             //where know
+            "+73434340321",          //phone
+            "BadGuy",               // skype
             "en",                   // langKey
             Arrays.asList(AuthoritiesConstants.ADMIN) // <-- only admin should be able to do that
         );

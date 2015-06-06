@@ -34,14 +34,24 @@
             "language": "Язык"
         },
         "form": {
-            "username": "Логин",
-            "username.placeholder": "Ваш логин",
+            "firstname": "Имя",
+            "firstname.placeholder": "Ваше имя",
+            "lastname": "Фамилия",
+            "lastname.placeholder": "Ваша фамилия",
+            "login": "Gmail",
+            "login.placeholder": "Ваш Gmail",
+            "skype": "Skype",
+            "skype.placeholder": "Ваш Skype",
+            "location": "Город",
+            "location.placeholder": "Ваш город",
+            "whereknow": "Источник информации",
+            "whereknow.placeholder": "Где вы узнали о курсе?",
+            "phone": "Телефон",
+            "phone.placeholder": "Ваш телефон",
             "newpassword": "Пароль",
             "newpassword.placeholder": "Ваш пароль",
             "confirmpassword": "Подтвердите пароль",
-            "confirmpassword.placeholder": "Подтвердите Ваш пароль",
-            "email": "E-mail",
-            "email.placeholder": "Ваш e-mail"
+            "confirmpassword.placeholder": "Подтвердите Ваш пароль"
         },
         "messages": {
             "info": {

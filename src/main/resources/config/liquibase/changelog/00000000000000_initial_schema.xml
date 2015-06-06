@@ -26,6 +26,18 @@
             <column name="password" type="varchar(100)"/>
             <column name="first_name" type="varchar(50)"/>
             <column name="last_name" type="varchar(50)"/>
+            <column name="photo" type="varchar(250)"/>
+            <column name="location" type="varchar(50)"/>
+            <column name="where_learned_about_course" type="varchar(100)"/>
+            <column name="phone" type="varchar(12)"/>
+            <column name="about_me" type="varchar(500)"/>
+            <column name="website" type="varchar(100)"/>
+            <column name="company" type="varchar(50)"/>
+            <column name="skype" type="varchar(50)"/>
+            <column name="github" type="varchar(100)"/>
+            <column name="vk" type="varchar(100)"/>
+
+
             <column name="activated" type="boolean" valueBoolean="false">
                 <constraints nullable="false" />
             </column>

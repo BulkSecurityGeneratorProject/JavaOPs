@@ -34,14 +34,24 @@
             "language": "Language"
         },
         "form": {
-            "username": "Login",
-            "username.placeholder": "Your login",
+            "firstname": "First name",
+            "firstname.placeholder": "Your first name",
+            "lastname": "Last name",
+            "lastname.placeholder": "Your last name",
+            "login": "Gmail",
+            "login.placeholder": "Your Gmail",
+            "skype": "Skype",
+            "skype.placeholder": "Your Skype",
+            "location": "City",
+            "location.placeholder": "Your city",
+            "whereknow": "Source information",
+            "whereknow.placeholder": "Where you know about course?",
+            "phone": "Phone",
+            "phone.placeholder": "Your phone",
             "newpassword": "New password",
             "newpassword.placeholder": "New password",
             "confirmpassword": "New password confirmation",
-            "confirmpassword.placeholder": "Confirm the new password",
-            "email": "E-mail",
-            "email.placeholder": "Your e-mail"
+            "confirmpassword.placeholder": "Confirm the new password"
         },
         "messages": {
             "info": {
