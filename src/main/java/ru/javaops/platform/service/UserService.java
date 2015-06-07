@@ -85,8 +85,8 @@ public class UserService {
            });
     }
 
-    public User createUserInformation(String login, String password, String firstName, String lastName,
-                                      String langKey) {
+    public User createUserInformation(String login, String password, String firstName, String lastName, String location,
+                                      String whereLeanedAboutCourse, String phone, String skype, String langKey) {
 
         User newUser = new User();
         Authority authority = authorityRepository.findOne("ROLE_USER");
@@ -97,6 +97,10 @@ public class UserService {
         newUser.setPassword(encryptedPassword);
         newUser.setFirstName(firstName);
         newUser.setLastName(lastName);
+        newUser.setLocation(location);
+        newUser.setWhereLeanedAboutCourse(whereLeanedAboutCourse);
+        newUser.setPhone(phone);
+        newUser.setSkype(skype);
         newUser.setLangKey(langKey);
         // new user is not active
         newUser.setActivated(false);

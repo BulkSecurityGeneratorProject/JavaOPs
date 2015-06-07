@@ -7,10 +7,33 @@
         "messages": {
             "validate": {
                 "login": {
-                    "required": "Your login is required.",
-                    "minlength": "Your login is required to be at least 1 character",
-                    "maxlength": "Your login cannot be longer than 50 characters",
-                    "pattern": "Your login can only contain lower-case letters and digits"
+                    "required": "Your Gmail is required.",
+                    "maxlength": "Your Gmail cannot be longer than 100 characters",
+                    "pattern": "Your Gmail can only contain lower-case letters and digits"
+                },
+                "firstName": {
+                    "required": "Your first name is required.",
+                    "minlength": "Your first name is required to be at least 2 character",
+                    "maxlength": "Your first name cannot be longer than 50 characters"
+                },
+                "lastName": {
+                    "required": "Your last name is required.",
+                    "minlength": "Your last name is required to be at least 2 character",
+                    "maxlength": "Your last name cannot be longer than 50 characters"
+                },
+                "skype": {
+                    "maxlength": "Your skype cannot be longer than 50 characters"
+                },
+                "location": {
+                    "required": "Location name is required.",
+                    "minlength": "Location is required to be at least 3 character",
+                    "maxlength": "Location cannot be longer than 50 characters"
+                },
+                "whereknow": {
+                    "maxlength": "Cannot be longer than 100 characters"
+                },
+                "phone": {
+                    "maxlength": "Your phone cannot be longer than 12 characters"
                 }
             },
             "success": "<strong>Registration saved!</strong> Please check your email for confirmation.",

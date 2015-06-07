@@ -26,26 +26,112 @@
             <form ng-show="!success" name="form" role="form" novalidate ng-submit="register()" show-validation>
 
                 <div class="form-group">
-                    <label translate="global.form.username">E-mail</label>
-                    <input type="email" class="form-control" name="login" placeholder="{{'global.form.email.placeholder' | translate}}"
-                           ng-model="registerAccount.login" ng-minlength=5 ng-maxlength=100 required>
+                    <label translate="global.form.firstname">First name</label>
+                    <input type="text" class="form-control" name="firstName" placeholder="{{'global.form.firstname.placeholder' | translate}}"
+                           ng-model="registerAccount.firstName" ng-minlength=2 ng-maxlength=50 required>
+                    <div ng-show="form.firstName.$dirty && form.firstName.$invalid">
+                        <p class="help-block"
+                           ng-show="form.firstName.$error.required" translate="register.messages.validate.firstName.required">
+                            Your first name is required.
+                        </p>
+                        <p class="help-block"
+                           ng-show="form.firstName.$error.minlength" translate="register.messages.validate.firstName.minlength">
+                            Your first name is required to be at least 2 character
+                        </p>
+                        <p class="help-block"
+                           ng-show="form.firstName.$error.maxlength" translate="register.messages.validate.firstName.maxlength">
+                            Your first name cannot be longer than 50 characters
+                        </p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label translate="global.form.lastname">Last name</label>
+                    <input type="text" class="form-control" name="lastName" placeholder="{{'global.form.lastname.placeholder' | translate}}"
+                           ng-model="registerAccount.lastName" ng-minlength=2 ng-maxlength=50 required>
+                    <div ng-show="form.lastName.$dirty && form.lastName.$invalid">
+                        <p class="help-block"
+                           ng-show="form.lastName.$error.required" translate="register.messages.validate.lastName.required">
+                            Your last name is required.
+                        </p>
+                        <p class="help-block"
+                           ng-show="form.lastName.$error.minlength" translate="register.messages.validate.lastName.minlength">
+                            Your last name is required to be at least 2 character
+                        </p>
+                        <p class="help-block"
+                           ng-show="form.lastName.$error.maxlength" translate="register.messages.validate.lastName.maxlength">
+                            Your lastname cannot be longer than 50 characters
+                        </p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label translate="global.form.login">Gmail</label>
+                    <input type="email" class="form-control" name="login" placeholder="{{'global.form.login.placeholder' | translate}}"
+                           ng-model="registerAccount.login" ng-maxlength=100 required>
                     <div ng-show="form.login.$dirty && form.login.$invalid">
                         <p class="help-block"
                                ng-show="form.login.$error.required" translate="register.messages.validate.login.required">
                             Your login is required.
                         </p>
                         <p class="help-block"
-                               ng-show="form.login.$error.minlength" translate="register.messages.validate.login.minlength">
-                            Your login is required to be at least 1 character
-                        </p>
-                        <p class="help-block"
                                ng-show="form.login.$error.maxlength" translate="register.messages.validate.login.maxlength">
-                            Your login cannot be longer than 50 characters
+                            Your login cannot be longer than 100 characters
                         </p>
                         <p class="help-block"
                                ng-show="form.login.$error.pattern" translate="register.messages.validate.login.pattern">
                             Your login can only contain lower-case letters and digits
                     </p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label translate="global.form.skype">Skype</label>
+                    <input type="text" class="form-control" name="skype" placeholder="{{'global.form.skype.placeholder' | translate}}"
+                           ng-model="registerAccount.skype" ng-maxlength=50>
+                    <div ng-show="form.skype.$dirty && form.skype.$invalid">
+                        <p class="help-block"
+                           ng-show="form.skype.$error.maxlength" translate="register.messages.validate.skype.maxlength">
+                            Your skype cannot be longer than 50 characters
+                        </p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label translate="global.form.location">Location</label>
+                    <input type="text" class="form-control" name="location" placeholder="{{'global.form.location.placeholder' | translate}}"
+                           ng-model="registerAccount.location" ng-minlength=3 ng-maxlength=50 required>
+                    <div ng-show="form.location.$dirty && form.location.$invalid">
+                        <p class="help-block"
+                           ng-show="form.location.$error.required" translate="register.messages.validate.location.required">
+                            Location is required.
+                        </p>
+                        <p class="help-block"
+                           ng-show="form.location.$error.minlength" translate="register.messages.validate.location.minlength">
+                            Location is required to be at least 3 character
+                        </p>
+                        <p class="help-block"
+                           ng-show="form.location.$error.maxlength" translate="register.messages.validate.location.maxlength">
+                            Your login cannot be longer than 50 characters
+                        </p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label translate="global.form.whereknow">Where know about course</label>
+                    <input type="text" class="form-control" name="whereknow" placeholder="{{'global.form.whereknow.placeholder' | translate}}"
+                           ng-model="registerAccount.whereLeanedAboutCourse" ng-maxlength=100>
+                    <div ng-show="form.whereknow.$dirty && form.whereknow.$invalid">
+                        <p class="help-block"
+                           ng-show="form.whereknow.$error.maxlength" translate="register.messages.validate.whereknow.maxlength">
+                            Сannot be longer than 100 characters
+                        </p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label translate="global.form.phone">Phone</label>
+                    <input type="tel" class="form-control" name="phone" placeholder="{{'global.form.phone.placeholder' | translate}}"
+                           ng-model="registerAccount.phone" ng-maxlength=12>
+                    <div ng-show="form.phone.$dirty && form.phone.$invalid">
+                        <p class="help-block"
+                           ng-show="form.phone.$error.maxlength" translate="register.messages.validate.phone.maxlength">
+                            Your phone cannot be longer than 12 characters
+                        </p>
                     </div>
                 </div>
                 <div class="form-group">
